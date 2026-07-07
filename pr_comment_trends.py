@@ -315,7 +315,7 @@ new Chart(ctx, {{
         label: 'Year avg',
         data: {yearly_trend_json},
         type: 'line',
-        borderColor: '#e36209',
+        borderColor: '#8250df',
         borderWidth: 2,
         borderDash: [3, 3],
         pointRadius: 0,
