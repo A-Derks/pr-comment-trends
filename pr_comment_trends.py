@@ -158,67 +158,137 @@ def collect_data(author_username):
 
 # ── HTML report ───────────────────────────────────────────────────────────────
 
+MEETING_CUTOFF = "2026-06-12"  # "before" = on or before; "after" = after
+
+
+def _section_html(chunk, label, date_range, chart_id):
+    """Return the HTML string for one time-period section (metrics + chart)."""
+    if not chunk:
+        return f'<p style="color:#57606a;margin-bottom:28px;">No merged PRs in the <strong>{label}</strong> period.</p>'
+
+    counts = [d["reviewer_comments"] for d in chunk]
+    avg = sum(counts) / len(counts)
+    avg_trend = [round(avg, 2)] * len(counts)
+    titles_json = json.dumps([d["title"][:60] for d in chunk])
+    labels_json = json.dumps([
+        f"#{d['pr_id']} ({d['repo'].replace('dkist-processing-','').replace('dkist-','')})"
+        for d in chunk
+    ])
+    counts_json = json.dumps(counts)
+    avg_trend_json = json.dumps(avg_trend)
+
+    # Section header color: green for "after", blue-gray for "before"
+    hdr_color = "#1a7f37" if "After" in label else "#0969da"
+    badge_bg  = "#dafbe1" if "After" in label else "#dbeafe"
+    badge_txt = "#1a7f37" if "After" in label else "#1e40af"
+
+    return f"""
+<div class="section">
+  <div class="section-header">
+    <span class="section-badge" style="background:{badge_bg};color:{badge_txt};">{label}</span>
+    <span class="section-range">{date_range}</span>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="value" style="color:{hdr_color};">{len(chunk)}</div><div class="label">merged PRs</div></div>
+    <div class="stat"><div class="value" style="color:{hdr_color};">{avg:.1f}</div><div class="label">overall avg reviewer comments</div></div>
+    <div class="stat"><div class="value" style="color:{hdr_color};">{max(counts)}</div><div class="label">most comments</div></div>
+  </div>
+  <div class="chart-wrap">
+    <h2>Reviewer comments per merged PR — {label}</h2>
+    <canvas id="{chart_id}"></canvas>
+  </div>
+</div>
+<script>
+(function() {{
+  const ctx = document.getElementById('{chart_id}').getContext('2d');
+  new Chart(ctx, {{
+    type: 'bar',
+    data: {{
+      labels: {labels_json},
+      datasets: [
+        {{
+          label: 'Reviewer comments',
+          data: {counts_json},
+          backgroundColor: '{"rgba(26,127,55,0.18)" if "After" in label else "rgba(9,105,218,0.18)"}',
+          borderColor: '{"rgba(26,127,55,0.7)" if "After" in label else "rgba(9,105,218,0.7)"}',
+          borderWidth: 1.5,
+          borderRadius: 3,
+          order: 2,
+        }},
+        {{
+          label: 'Overall avg ({avg:.1f})',
+          data: {avg_trend_json},
+          type: 'line',
+          borderColor: '#cf222e',
+          borderWidth: 2,
+          borderDash: [6, 3],
+          pointRadius: 0,
+          fill: false,
+          order: 1,
+        }},
+      ]
+    }},
+    options: {{
+      responsive: true,
+      plugins: {{
+        legend: {{ position: 'top', labels: {{ font: {{ size: 12 }} }} }},
+        tooltip: {{
+          callbacks: {{
+            title: (items) => {titles_json}[items[0].dataIndex]
+          }}
+        }}
+      }},
+      scales: {{
+        y: {{
+          beginAtZero: true,
+          ticks: {{ stepSize: 1 }},
+          title: {{ display: true, text: 'Comment count' }}
+        }},
+        x: {{
+          ticks: {{ font: {{ size: 10 }}, maxRotation: 45 }}
+        }}
+      }}
+    }}
+  }});
+}})();
+</script>"""
+
+
 def make_html(results):
     if not results:
         return "<html><body><p>No merged PRs found.</p></body></html>"
 
-    labels = [f"#{d['pr_id']} ({d['repo'].replace('dkist-processing-','').replace('dkist-','')})" for d in results]
-    reviewer_counts = [d["reviewer_comments"] for d in results]
-    total_counts = [d["total_comments"] for d in results]
+    cutoff_dt = datetime.strptime(MEETING_CUTOFF, "%Y-%m-%d")
+    before = [d for d in results if datetime.strptime(d["created"], "%Y-%m-%d") <= cutoff_dt]
+    after  = [d for d in results if datetime.strptime(d["created"], "%Y-%m-%d") >  cutoff_dt]
 
-    # Overall average
-    avg = sum(reviewer_counts) / len(reviewer_counts) if reviewer_counts else 0
-    overall_trend = [round(avg, 2)] * len(reviewer_counts)
-
-    # Calendar-year average — steps up/down at year boundaries
-    from collections import defaultdict
-    year_buckets = defaultdict(list)
-    for d, r in zip(results, reviewer_counts):
-        year_buckets[d["created"][:4]].append(r)
-    year_avgs = {y: sum(v) / len(v) for y, v in year_buckets.items()}
-    yearly_trend = [round(year_avgs[d["created"][:4]], 2) for d in results]
-
-    # Last-3-months average — only drawn over that window, null before it
-    latest_dt = datetime.strptime(results[-1]["created"], "%Y-%m-%d")
-    m, y = latest_dt.month - 3, latest_dt.year
-    if m <= 0:
-        m += 12
-        y -= 1
-    cutoff = latest_dt.replace(year=y, month=m)
-    last3m = [r for d, r in zip(results, reviewer_counts)
-              if datetime.strptime(d["created"], "%Y-%m-%d") >= cutoff]
-    last3m_avg = round(sum(last3m) / len(last3m), 2) if last3m else None
-    last3m_trend = [
-        last3m_avg if datetime.strptime(d["created"], "%Y-%m-%d") >= cutoff else None
-        for d in results
-    ]
-
-    total_prs = len(results)
     earliest = results[0]["created"]
-    latest = results[-1]["created"]
+    latest   = results[-1]["created"]
+    today    = datetime.today().strftime("%Y-%m-%d")
 
-    # Table rows
+    before_range = f"{earliest} → {MEETING_CUTOFF}"
+    after_range  = f"2026-06-13 → {today}"
+
+    after_html  = _section_html(after,  "After Meeting",  after_range,  "chart-after")
+    before_html = _section_html(before, "Before Meeting", before_range, "chart-before")
+
+    # Table rows — PRs on or before cutoff get red text
     table_rows = ""
     for d in reversed(results):
         repo_short = d["repo"].replace("dkist-processing-", "").replace("dkist-", "")
+        is_before  = datetime.strptime(d["created"], "%Y-%m-%d") <= cutoff_dt
+        row_style  = ' style="color:#cf222e;"' if is_before else ""
+        link_style = ' style="color:#cf222e;"' if is_before else ""
         table_rows += (
-            f'<tr>'
+            f'<tr{row_style}>'
             f'<td>{d["created"]}</td>'
             f'<td>{repo_short}</td>'
-            f'<td><a href="{d["url"]}" target="_blank">#{d["pr_id"]}</a></td>'
+            f'<td><a href="{d["url"]}" target="_blank"{link_style}>#{d["pr_id"]}</a></td>'
             f'<td class="truncate" title="{d["title"]}">{d["title"][:55]}{"…" if len(d["title"])>55 else ""}</td>'
             f'<td class="num">{d["reviewer_comments"]}</td>'
             f'<td class="num dim">{d["total_comments"]}</td>'
             f'</tr>\n'
         )
-
-    labels_json = json.dumps(labels)
-    reviewer_json = json.dumps(reviewer_counts)
-    total_json = json.dumps(total_counts)
-    overall_trend_json = json.dumps(overall_trend)
-    yearly_trend_json = json.dumps(yearly_trend)
-    last3m_trend_json = json.dumps(last3m_trend)
-    last3m_label = f"Last 3 months avg ({last3m_avg:.1f})" if last3m_avg is not None else "Last 3 months avg"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -231,16 +301,23 @@ def make_html(results):
   body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           background: #f6f8fa; color: #24292f; padding: 32px; }}
   h1 {{ font-size: 1.4rem; font-weight: 600; margin-bottom: 4px; }}
-  .subtitle {{ color: #57606a; font-size: 0.85rem; margin-bottom: 28px; }}
-  .stats {{ display: flex; gap: 20px; margin-bottom: 32px; flex-wrap: wrap; }}
+  .page-subtitle {{ color: #57606a; font-size: 0.85rem; margin-bottom: 36px; }}
+  .section {{ margin-bottom: 48px; }}
+  .section-header {{ display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }}
+  .section-badge {{ font-size: 0.9rem; font-weight: 700; padding: 4px 14px;
+                    border-radius: 20px; letter-spacing: 0.02em; }}
+  .section-range {{ color: #57606a; font-size: 0.82rem; }}
+  .stats {{ display: flex; gap: 20px; margin-bottom: 24px; flex-wrap: wrap; }}
   .stat {{ background: white; border: 1px solid #d0d7de; border-radius: 8px;
-           padding: 16px 24px; min-width: 140px; }}
-  .stat .value {{ font-size: 2rem; font-weight: 700; color: #0969da; }}
+           padding: 16px 24px; min-width: 160px; }}
+  .stat .value {{ font-size: 2rem; font-weight: 700; }}
   .stat .label {{ font-size: 0.78rem; color: #57606a; margin-top: 2px; }}
   .chart-wrap {{ background: white; border: 1px solid #d0d7de; border-radius: 8px;
-                 padding: 24px; margin-bottom: 28px; }}
+                 padding: 24px; margin-bottom: 12px; }}
   .chart-wrap h2 {{ font-size: 0.9rem; font-weight: 600; margin-bottom: 16px; color: #57606a; }}
-  canvas {{ max-height: 320px; }}
+  canvas {{ max-height: 300px; }}
+  .section-divider {{ border: none; border-top: 2px solid #d0d7de; margin: 16px 0 44px; }}
+  .table-heading {{ font-size: 1rem; font-weight: 600; margin-bottom: 14px; color: #24292f; }}
   table {{ width: 100%; border-collapse: collapse; background: white;
            border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; font-size: 0.83rem; }}
   th {{ background: #f6f8fa; padding: 10px 12px; text-align: left;
@@ -257,22 +334,17 @@ def make_html(results):
 </head>
 <body>
 <h1>PR Comment Trends</h1>
-<p class="subtitle">Workspace: {WORKSPACE} &nbsp;·&nbsp; {earliest} → {latest} &nbsp;·&nbsp; Generated {datetime.today().strftime('%Y-%m-%d')}</p>
+<p class="page-subtitle">Workspace: {WORKSPACE} &nbsp;·&nbsp; Generated {today}</p>
 
-<div class="stats">
-  <div class="stat"><div class="value">{total_prs}</div><div class="label">merged PRs</div></div>
-  <div class="stat"><div class="value">{avg:.1f}</div><div class="label">overall avg</div></div>
-  <div class="stat"><div class="value">{year_avgs.get(datetime.today().strftime('%Y'), avg):.1f}</div><div class="label">{datetime.today().strftime('%Y')} avg</div></div>
-  <div class="stat"><div class="value">{last3m_avg if last3m_avg is not None else "—"}</div><div class="label">last 3 months avg</div></div>
-  <div class="stat"><div class="value">{min(reviewer_counts)}</div><div class="label">fewest comments</div></div>
-  <div class="stat"><div class="value">{max(reviewer_counts)}</div><div class="label">most comments</div></div>
-</div>
+{after_html}
 
-<div class="chart-wrap">
-  <h2>Reviewer comments per merged PR (chronological)</h2>
-  <canvas id="chart"></canvas>
-</div>
+<hr class="section-divider">
 
+{before_html}
+
+<hr class="section-divider">
+
+<p class="table-heading">All Merged PRs</p>
 <table>
   <thead>
     <tr>
@@ -283,84 +355,6 @@ def make_html(results):
   <tbody>
 {table_rows}  </tbody>
 </table>
-
-<script>
-const ctx = document.getElementById('chart').getContext('2d');
-new Chart(ctx, {{
-  type: 'bar',
-  data: {{
-    labels: {labels_json},
-    datasets: [
-      {{
-        label: 'Reviewer comments',
-        data: {reviewer_json},
-        backgroundColor: 'rgba(9, 105, 218, 0.18)',
-        borderColor: 'rgba(9, 105, 218, 0.7)',
-        borderWidth: 1.5,
-        borderRadius: 3,
-        order: 2,
-      }},
-      {{
-        label: 'Overall avg ({avg:.1f})',
-        data: {overall_trend_json},
-        type: 'line',
-        borderColor: '#cf222e',
-        borderWidth: 2,
-        borderDash: [6, 3],
-        pointRadius: 0,
-        fill: false,
-        order: 1,
-      }},
-      {{
-        label: 'Year avg',
-        data: {yearly_trend_json},
-        type: 'line',
-        borderColor: '#8250df',
-        borderWidth: 2,
-        borderDash: [3, 3],
-        pointRadius: 0,
-        fill: false,
-        order: 1,
-      }},
-      {{
-        label: '{last3m_label}',
-        data: {last3m_trend_json},
-        type: 'line',
-        borderColor: '#1a7f37',
-        borderWidth: 2,
-        pointRadius: 0,
-        spanGaps: false,
-        fill: false,
-        order: 1,
-      }},
-    ]
-  }},
-  options: {{
-    responsive: true,
-    plugins: {{
-      legend: {{ position: 'top', labels: {{ font: {{ size: 12 }} }} }},
-      tooltip: {{
-        callbacks: {{
-          title: (items) => {{
-            const i = items[0].dataIndex;
-            return {json.dumps([d["title"][:60] for d in results])}[i];
-          }}
-        }}
-      }}
-    }},
-    scales: {{
-      y: {{
-        beginAtZero: true,
-        ticks: {{ stepSize: 1 }},
-        title: {{ display: true, text: 'Comment count' }}
-      }},
-      x: {{
-        ticks: {{ font: {{ size: 10 }}, maxRotation: 45 }}
-      }}
-    }}
-  }}
-}});
-</script>
 </body>
 </html>"""
 
