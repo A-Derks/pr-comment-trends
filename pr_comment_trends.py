@@ -38,7 +38,7 @@ AUTHOR_USERNAME = os.environ.get("BITBUCKET_AUTHOR_USERNAME", "")
 # Accounts to exclude from "reviewer comment" counts
 # (your own comments + AI reviewer)
 # Matched against author.nickname (case-insensitive)
-EXCLUDE_NICKNAMES = {AUTHOR_USERNAME, "rovo-dev", "alysaderks"}
+EXCLUDE_NICKNAMES = {AUTHOR_USERNAME, "rovo-dev", "aderks"}
 # Matched against author.display_name (case-insensitive, exact)
 EXCLUDE_DISPLAY_NAMES = {"alysa derks"}
 # Excluded if author.nickname or author.display_name CONTAINS any of these substrings
@@ -153,9 +153,26 @@ def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
+CACHE_FILE = "pr_comment_trends.json"
+
+
+def load_cache():
+    """Load previously fetched PR data. Returns dict keyed by (repo, pr_id)."""
+    if not os.path.exists(CACHE_FILE):
+        return {}
+    with open(CACHE_FILE) as f:
+        data = json.load(f)
+    return {(d["repo"], d["pr_id"]): d for d in data}
+
+
 def collect_data(author_username):
     headers = get_headers()
     exclude = EXCLUDE_FROM_REVIEWER_COUNT | {author_username, author_username.lower()}
+
+    # Load cached results — MERGED PRs are immutable so we skip re-fetching them
+    cache = load_cache()
+    cached_merged = {k: v for k, v in cache.items() if v.get("state", "MERGED") == "MERGED"}
+    print(f"Loaded {len(cached_merged)} cached MERGED PRs.")
 
     print(f"Fetching repos in workspace '{WORKSPACE}'...")
     repos = get_all_repos(WORKSPACE, headers)
@@ -169,6 +186,15 @@ def collect_data(author_username):
         print(f"  {repo}: {len(prs)} PR(s)")
         for pr in prs:
             pr_id = pr["id"]
+            state = pr.get("state", "MERGED")
+            cache_key = (repo, pr_id)
+
+            # Re-use cached data for MERGED PRs to avoid redundant API calls
+            if state == "MERGED" and cache_key in cached_merged:
+                results.append(cached_merged[cache_key])
+                print(f"    #{pr_id}: (cached) — {pr['title'][:45]}")
+                continue
+
             total, reviewer = get_pr_comment_stats(
                 WORKSPACE, repo, pr_id, headers, exclude
             )
@@ -177,7 +203,7 @@ def collect_data(author_username):
                 "pr_id": pr_id,
                 "title": pr["title"],
                 "created": pr["created_on"][:10],
-                "state": pr.get("state", "MERGED"),
+                "state": state,
                 "total_comments": total,
                 "reviewer_comments": reviewer,
                 "url": f"https://bitbucket.org/{WORKSPACE}/{repo}/pull-requests/{pr_id}",
