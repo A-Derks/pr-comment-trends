@@ -24,6 +24,7 @@ Output:
 import os
 import sys
 import json
+import time
 import requests
 from datetime import datetime
 
@@ -75,15 +76,23 @@ def get_headers():
 
 
 def paginate(url, headers, params=None):
-    """Yield all items across paginated Bitbucket responses."""
+    """Yield all items across paginated Bitbucket responses, with 429 retry."""
     params = dict(params or {})
     while url:
-        r = requests.get(url, headers=headers, params=params)
-        r.raise_for_status()
+        for attempt in range(5):
+            r = requests.get(url, headers=headers, params=params)
+            if r.status_code == 429:
+                wait = int(r.headers.get("Retry-After", 60)) + attempt * 10
+                print(f"    Rate limited — waiting {wait}s before retry...")
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            break
         data = r.json()
         yield from data.get("values", [])
         url = data.get("next")
         params = {}  # 'next' URL already encodes params
+        time.sleep(0.3)  # small delay between pages to stay under rate limit
 
 
 def get_all_repos(workspace, headers):
