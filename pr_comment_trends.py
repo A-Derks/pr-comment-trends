@@ -92,21 +92,24 @@ def get_all_repos(workspace, headers):
     return [r["slug"] for r in paginate(url, headers, params={"pagelen": 100})]
 
 
-def get_merged_prs_by_author(workspace, repo, author, headers):
-    """Return merged PRs in this repo authored by `author` (matched by nickname)."""
+def get_prs_by_author(workspace, repo, author, headers, states=("MERGED", "OPEN")):
+    """Return PRs in this repo authored by `author` (matched by nickname)."""
     url = f"{BASE_URL}/repositories/{workspace}/{repo}/pullrequests"
-    params = {
-        "state": "MERGED",
-        "pagelen": 50,
-        "fields": (
-            "values.id,values.title,values.created_on,"
-            "values.author.nickname,next"
-        ),
-    }
-    # author.nickname is not a filterable field in Bitbucket's query language,
-    # so we fetch all merged PRs and filter client-side.
-    all_prs = list(paginate(url, headers, params=params))
-    return [p for p in all_prs if p.get("author", {}).get("nickname") == author]
+    all_prs = []
+    for state in states:
+        params = {
+            "state": state,
+            "pagelen": 50,
+            "fields": (
+                "values.id,values.title,values.created_on,"
+                "values.author.nickname,values.state,next"
+            ),
+        }
+        # author.nickname is not a filterable field in Bitbucket's query language,
+        # so we fetch all PRs and filter client-side.
+        prs = list(paginate(url, headers, params=params))
+        all_prs.extend([p for p in prs if p.get("author", {}).get("nickname") == author])
+    return all_prs
 
 
 def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
@@ -151,7 +154,7 @@ def collect_data(author_username):
 
     results = []
     for repo in sorted(repos):
-        prs = get_merged_prs_by_author(WORKSPACE, repo, author_username, headers)
+        prs = get_prs_by_author(WORKSPACE, repo, author_username, headers)
         if not prs:
             continue
         print(f"  {repo}: {len(prs)} PR(s)")
@@ -165,6 +168,7 @@ def collect_data(author_username):
                 "pr_id": pr_id,
                 "title": pr["title"],
                 "created": pr["created_on"][:10],
+                "state": pr.get("state", "MERGED"),
                 "total_comments": total,
                 "reviewer_comments": reviewer,
                 "url": f"https://bitbucket.org/{WORKSPACE}/{repo}/pull-requests/{pr_id}",
@@ -298,12 +302,21 @@ def make_html(results):
         is_before  = datetime.strptime(d["created"], "%Y-%m-%d") <= cutoff_dt
         row_style  = ' style="color:#cf222e;"' if is_before else ""
         link_style = ' style="color:#cf222e;"' if is_before else ""
+        state = d.get("state", "MERGED")
+        state_badge = (
+            '<span style="background:#dafbe1;color:#1a7f37;font-size:0.75rem;'
+            'padding:2px 8px;border-radius:10px;font-weight:600;">OPEN</span>'
+            if state == "OPEN" else
+            '<span style="background:#f0f0f0;color:#57606a;font-size:0.75rem;'
+            'padding:2px 8px;border-radius:10px;">MERGED</span>'
+        )
         table_rows += (
             f'<tr{row_style}>'
             f'<td>{d["created"]}</td>'
             f'<td>{repo_short}</td>'
             f'<td><a href="{d["url"]}" target="_blank"{link_style}>#{d["pr_id"]}</a></td>'
             f'<td class="truncate" title="{d["title"]}">{d["title"][:55]}{"…" if len(d["title"])>55 else ""}</td>'
+            f'<td>{state_badge}</td>'
             f'<td class="num">{d["reviewer_comments"]}</td>'
             f'<td class="num dim">{d["total_comments"]}</td>'
             f'</tr>\n'
@@ -367,7 +380,7 @@ def make_html(results):
 <table>
   <thead>
     <tr>
-      <th>Date</th><th>Repo</th><th>PR</th><th>Title</th>
+      <th>Date</th><th>Repo</th><th>PR</th><th>Title</th><th>State</th>
       <th class="num">Reviewer comments</th><th class="num dim">Total (incl. yours)</th>
     </tr>
   </thead>
