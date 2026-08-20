@@ -36,7 +36,14 @@ AUTHOR_USERNAME = os.environ.get("BITBUCKET_AUTHOR_USERNAME", "")
 
 # Accounts to exclude from "reviewer comment" counts
 # (your own comments + AI reviewer)
-EXCLUDE_FROM_REVIEWER_COUNT = {AUTHOR_USERNAME, "rovo-dev"}
+# Matched against author.nickname (case-insensitive)
+EXCLUDE_NICKNAMES = {AUTHOR_USERNAME, "rovo-dev", "alysaderks"}
+# Matched against author.display_name (case-insensitive, exact)
+EXCLUDE_DISPLAY_NAMES = {"alysa derks"}
+# Excluded if author.nickname or author.display_name CONTAINS any of these substrings
+EXCLUDE_NAME_SUBSTRINGS = {"rovo"}
+# Keep legacy name for collect_data compatibility
+EXCLUDE_FROM_REVIEWER_COUNT = EXCLUDE_NICKNAMES
 
 # ── API helpers ───────────────────────────────────────────────────────────────
 
@@ -112,11 +119,23 @@ def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
     comments = list(paginate(url, headers, params={"pagelen": 100}))
     active = [c for c in comments if not c.get("deleted", False)]
     total = len(active)
-    reviewer = sum(
-        1 for c in active
-        if c.get("author", {}).get("nickname", "").lower()
-        not in {u.lower() for u in exclude_users if u}
-    )
+
+    exclude_nicks = {u.lower() for u in exclude_users if u}
+
+    def _is_excluded(comment):
+        author = comment.get("author") or {}
+        nick = (author.get("nickname") or "").lower()
+        display = (author.get("display_name") or "").lower()
+        if nick in exclude_nicks:
+            return True
+        if display in EXCLUDE_DISPLAY_NAMES:
+            return True
+        for sub in EXCLUDE_NAME_SUBSTRINGS:
+            if sub in nick or sub in display:
+                return True
+        return False
+
+    reviewer = sum(1 for c in active if not _is_excluded(c))
     return total, reviewer
 
 
@@ -124,7 +143,7 @@ def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
 
 def collect_data(author_username):
     headers = get_headers()
-    exclude = EXCLUDE_FROM_REVIEWER_COUNT | {author_username}
+    exclude = EXCLUDE_FROM_REVIEWER_COUNT | {author_username, author_username.lower()}
 
     print(f"Fetching repos in workspace '{WORKSPACE}'...")
     repos = get_all_repos(WORKSPACE, headers)
