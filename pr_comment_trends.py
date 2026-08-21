@@ -135,7 +135,8 @@ def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
     exclude_nicks = {u.lower() for u in exclude_users if u}
 
     def _is_excluded(comment):
-        author = comment.get("author") or {}
+        # Bitbucket comment objects put the author under "user", not "author"
+        author = comment.get("user") or comment.get("author") or {}
         nick = (author.get("nickname") or "").lower()
         display = (author.get("display_name") or "").lower()
         if nick in exclude_nicks:
