@@ -1636,7 +1636,7 @@
     "created": "2026-04-28",
     "state": "OPEN",
     "total_comments": 25,
-    "reviewer_comments": 25,
+    "reviewer_comments": 13,
     "url": "https://bitbucket.org/dkistdc/dkist-inventory/pull-requests/92"
   },
   {
@@ -1676,7 +1676,7 @@
     "created": "2026-07-13",
     "state": "OPEN",
     "total_comments": 149,
-    "reviewer_comments": 149,
+    "reviewer_comments": 85,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/329"
   },
   {
@@ -1706,7 +1706,7 @@
     "created": "2026-07-30",
     "state": "OPEN",
     "total_comments": 13,
-    "reviewer_comments": 13,
+    "reviewer_comments": 9,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/27"
   }
 ]
