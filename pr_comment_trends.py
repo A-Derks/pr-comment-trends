@@ -76,18 +76,41 @@ def get_headers():
 
 
 def paginate(url, headers, params=None):
-    """Yield all items across paginated Bitbucket responses, with 429 retry."""
+    """Yield all items across paginated Bitbucket responses.
+
+    Retries on 429 (rate limit) and on transient network errors
+    (connection reset, timeout, etc.) with exponential backoff.
+    """
     params = dict(params or {})
     while url:
-        for attempt in range(5):
-            r = requests.get(url, headers=headers, params=params)
+        r = None
+        last_exc = None
+        for attempt in range(6):
+            try:
+                r = requests.get(url, headers=headers, params=params, timeout=30)
+            except requests.exceptions.RequestException as exc:
+                last_exc = exc
+                wait = min(60, 2 ** attempt) + attempt * 2
+                print(f"    Network error ({exc.__class__.__name__}) — retrying in {wait}s...")
+                time.sleep(wait)
+                continue
             if r.status_code == 429:
                 wait = int(r.headers.get("Retry-After", 60)) + attempt * 10
                 print(f"    Rate limited — waiting {wait}s before retry...")
                 time.sleep(wait)
                 continue
+            if r.status_code >= 500:
+                wait = min(60, 2 ** attempt) + attempt * 2
+                print(f"    Server error {r.status_code} — retrying in {wait}s...")
+                time.sleep(wait)
+                continue
             r.raise_for_status()
             break
+        else:
+            # Exhausted all retries
+            if r is not None:
+                r.raise_for_status()
+            raise last_exc
         data = r.json()
         yield from data.get("values", [])
         url = data.get("next")
