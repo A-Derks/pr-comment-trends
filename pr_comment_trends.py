@@ -179,14 +179,27 @@ def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
 
 CACHE_FILE = "pr_comment_trends.json"
 
+# Bump this any time the comment-counting/exclusion logic changes.
+# Cached entries written under an older version are ignored and recomputed,
+# so a logic fix doesn't get silently masked by stale cached values.
+CACHE_LOGIC_VERSION = 2
+
 
 def load_cache():
-    """Load previously fetched PR data. Returns dict keyed by (repo, pr_id)."""
+    """Load previously fetched PR data. Returns dict keyed by (repo, pr_id).
+
+    Entries missing a matching _cache_version (or written by older script
+    versions) are dropped so they get recomputed with current logic.
+    """
     if not os.path.exists(CACHE_FILE):
         return {}
     with open(CACHE_FILE) as f:
         data = json.load(f)
-    return {(d["repo"], d["pr_id"]): d for d in data}
+    return {
+        (d["repo"], d["pr_id"]): d
+        for d in data
+        if d.get("_cache_version") == CACHE_LOGIC_VERSION
+    }
 
 
 def collect_data(author_username):
@@ -196,7 +209,7 @@ def collect_data(author_username):
     # Load cached results — MERGED PRs are immutable so we skip re-fetching them
     cache = load_cache()
     cached_merged = {k: v for k, v in cache.items() if v.get("state", "MERGED") == "MERGED"}
-    print(f"Loaded {len(cached_merged)} cached MERGED PRs.")
+    print(f"Loaded {len(cached_merged)} cached MERGED PRs (cache logic v{CACHE_LOGIC_VERSION}).")
 
     print(f"Fetching repos in workspace '{WORKSPACE}'...")
     repos = get_all_repos(WORKSPACE, headers)
@@ -231,6 +244,7 @@ def collect_data(author_username):
                 "total_comments": total,
                 "reviewer_comments": reviewer,
                 "url": f"https://bitbucket.org/{WORKSPACE}/{repo}/pull-requests/{pr_id}",
+                "_cache_version": CACHE_LOGIC_VERSION,
             })
             print(f"    #{pr_id}: {reviewer} reviewer comments ({total} total) — {pr['title'][:45]}")
 
