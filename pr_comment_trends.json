@@ -1798,7 +1798,7 @@
     "title": "implementing non linear spectral dispersion code",
     "created": "2026-04-28",
     "state": "OPEN",
-    "total_comments": 26,
+    "total_comments": 27,
     "reviewer_comments": 14,
     "url": "https://bitbucket.org/dkistdc/dkist-inventory/pull-requests/92",
     "_cache_version": 2
@@ -1853,8 +1853,8 @@
     "title": "Collapse two-pass geometry correction into a single homogeneous-coordinates warp",
     "created": "2026-07-29",
     "state": "OPEN",
-    "total_comments": 16,
-    "reviewer_comments": 10,
+    "total_comments": 19,
+    "reviewer_comments": 13,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/331",
     "_cache_version": 2
   },
@@ -1864,8 +1864,8 @@
     "title": "Collapse two-pass geometry correction into a single homogeneous-coordinates warp",
     "created": "2026-07-30",
     "state": "OPEN",
-    "total_comments": 24,
-    "reviewer_comments": 14,
+    "total_comments": 27,
+    "reviewer_comments": 17,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/297",
     "_cache_version": 2
   },
@@ -1875,8 +1875,8 @@
     "title": "Homogeneous-coordinates: apply combined rotation+shift to arrays in one interpolation pass",
     "created": "2026-07-30",
     "state": "OPEN",
-    "total_comments": 57,
-    "reviewer_comments": 38,
+    "total_comments": 77,
+    "reviewer_comments": 48,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/27",
     "_cache_version": 2
   },
@@ -1889,6 +1889,28 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/535",
+    "_cache_version": 2
+  },
+  {
+    "repo": "dkist-processing-visp",
+    "pr_id": 338,
+    "title": "Add code cleanliness, consistency, and domain-quality review sections to Rovo Dev agent",
+    "created": "2026-09-21",
+    "state": "OPEN",
+    "total_comments": 7,
+    "reviewer_comments": 6,
+    "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/338",
+    "_cache_version": 2
+  },
+  {
+    "repo": "dkist-processing-cryonirsp",
+    "pr_id": 304,
+    "title": "Combine all exposure conditions into a single gain frame per beam",
+    "created": "2026-09-22",
+    "state": "OPEN",
+    "total_comments": 3,
+    "reviewer_comments": 0,
+    "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/304",
     "_cache_version": 2
   }
 ]
