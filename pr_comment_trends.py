@@ -144,35 +144,87 @@ def get_prs_by_author(workspace, repo, author, headers, states=("MERGED", "OPEN"
     return all_prs
 
 
-def get_pr_comment_stats(workspace, repo, pr_id, headers, exclude_users):
+def get_pr_comments(workspace, repo, pr_id, headers):
+    """Return all non-deleted comments for a PR (raw API objects)."""
+    url = f"{BASE_URL}/repositories/{workspace}/{repo}/pullrequests/{pr_id}/comments"
+    comments = list(paginate(url, headers, params={"pagelen": 100}))
+    return [c for c in comments if not c.get("deleted", False)]
+
+
+def get_pr_commits(workspace, repo, pr_id, headers):
+    """Return all commits for a PR (raw API objects)."""
+    url = f"{BASE_URL}/repositories/{workspace}/{repo}/pullrequests/{pr_id}/commits"
+    params = {"pagelen": 100, "fields": "values.hash,values.date,next"}
+    return list(paginate(url, headers, params=params))
+
+
+def _is_excluded_comment(comment, exclude_users):
+    """True if a comment's author is you or the AI reviewer bot."""
+    exclude_nicks = {u.lower() for u in exclude_users if u}
+    # Bitbucket comment objects put the author under "user", not "author"
+    author = comment.get("user") or comment.get("author") or {}
+    nick = (author.get("nickname") or "").lower()
+    display = (author.get("display_name") or "").lower()
+    if nick in exclude_nicks:
+        return True
+    if display in EXCLUDE_DISPLAY_NAMES:
+        return True
+    for sub in EXCLUDE_NAME_SUBSTRINGS:
+        if sub in nick or sub in display:
+            return True
+    return False
+
+
+def compute_comment_stats(comments, exclude_users):
     """
     Return (total, reviewer) comment counts for one PR.
     - total: all non-deleted comments
     - reviewer: comments whose author is not in exclude_users
     """
-    url = f"{BASE_URL}/repositories/{workspace}/{repo}/pullrequests/{pr_id}/comments"
-    comments = list(paginate(url, headers, params={"pagelen": 100}))
-    active = [c for c in comments if not c.get("deleted", False)]
-    total = len(active)
-
-    exclude_nicks = {u.lower() for u in exclude_users if u}
-
-    def _is_excluded(comment):
-        # Bitbucket comment objects put the author under "user", not "author"
-        author = comment.get("user") or comment.get("author") or {}
-        nick = (author.get("nickname") or "").lower()
-        display = (author.get("display_name") or "").lower()
-        if nick in exclude_nicks:
-            return True
-        if display in EXCLUDE_DISPLAY_NAMES:
-            return True
-        for sub in EXCLUDE_NAME_SUBSTRINGS:
-            if sub in nick or sub in display:
-                return True
-        return False
-
-    reviewer = sum(1 for c in active if not _is_excluded(c))
+    total = len(comments)
+    reviewer = sum(1 for c in comments if not _is_excluded_comment(c, exclude_users))
     return total, reviewer
+
+
+def compute_churn_count(comments, commits, exclude_users):
+    """
+    Count "churn" cycles: a reviewer leaves one or more comments, and you
+    push at least one commit afterward, before that reviewer's next batch
+    of comments. Each such comment-batch -> commit round counts as one churn.
+
+    A written reply isn't required — a commit landing after reviewer
+    feedback counts as addressing it, since many fixes never get an
+    explicit "Fixed" reply (confirmed by spot-checking real PR threads).
+    """
+    reviewer_comment_times = sorted(
+        datetime.fromisoformat(c["created_on"])
+        for c in comments
+        if not _is_excluded_comment(c, exclude_users)
+    )
+    commit_times = sorted(datetime.fromisoformat(c["date"]) for c in commits)
+
+    if not reviewer_comment_times or not commit_times:
+        return 0
+
+    # Merge both timelines into one chronological event stream and walk it
+    # with a simple state machine: waiting_for_fix flips on at a reviewer
+    # comment (further comments before a commit don't start a new round)
+    # and flips off — counting one churn — at the next commit.
+    events = (
+        [("comment", t) for t in reviewer_comment_times]
+        + [("commit", t) for t in commit_times]
+    )
+    events.sort(key=lambda e: e[1])
+
+    churns = 0
+    waiting_for_fix = False
+    for kind, _ in events:
+        if kind == "comment" and not waiting_for_fix:
+            waiting_for_fix = True
+        elif kind == "commit" and waiting_for_fix:
+            churns += 1
+            waiting_for_fix = False
+    return churns
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -182,7 +234,7 @@ CACHE_FILE = "pr_comment_trends.json"
 # Bump this any time the comment-counting/exclusion logic changes.
 # Cached entries written under an older version are ignored and recomputed,
 # so a logic fix doesn't get silently masked by stale cached values.
-CACHE_LOGIC_VERSION = 2
+CACHE_LOGIC_VERSION = 3
 
 
 def load_cache():
@@ -232,9 +284,12 @@ def collect_data(author_username):
                 print(f"    #{pr_id}: (cached) — {pr['title'][:45]}")
                 continue
 
-            total, reviewer = get_pr_comment_stats(
-                WORKSPACE, repo, pr_id, headers, exclude
-            )
+            comments = get_pr_comments(WORKSPACE, repo, pr_id, headers)
+            total, reviewer = compute_comment_stats(comments, exclude)
+
+            commits = get_pr_commits(WORKSPACE, repo, pr_id, headers)
+            churn = compute_churn_count(comments, commits, exclude)
+
             results.append({
                 "repo": repo,
                 "pr_id": pr_id,
@@ -243,10 +298,14 @@ def collect_data(author_username):
                 "state": state,
                 "total_comments": total,
                 "reviewer_comments": reviewer,
+                "churn_count": churn,
                 "url": f"https://bitbucket.org/{WORKSPACE}/{repo}/pull-requests/{pr_id}",
                 "_cache_version": CACHE_LOGIC_VERSION,
             })
-            print(f"    #{pr_id}: {reviewer} reviewer comments ({total} total) — {pr['title'][:45]}")
+            print(
+                f"    #{pr_id}: {reviewer} reviewer comments ({total} total), "
+                f"{churn} churn(s) — {pr['title'][:45]}"
+            )
 
     results.sort(key=lambda x: x["created"])
     return results
@@ -265,6 +324,8 @@ def _section_html(chunk, label, date_range, chart_id):
     counts = [d["reviewer_comments"] for d in chunk]
     avg = sum(counts) / len(counts)
     avg_trend = [round(avg, 2)] * len(counts)
+    churn_counts = [d.get("churn_count", 0) for d in chunk]
+    avg_churn = sum(churn_counts) / len(churn_counts)
     titles_json = json.dumps([d["title"][:60] for d in chunk])
     labels_json = json.dumps([
         f"#{d['pr_id']} ({d['repo'].replace('dkist-processing-','').replace('dkist-','')})"
@@ -288,6 +349,7 @@ def _section_html(chunk, label, date_range, chart_id):
     <div class="stat"><div class="value" style="color:{hdr_color};">{len(chunk)}</div><div class="label">merged PRs</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{avg:.1f}</div><div class="label">overall avg reviewer comments</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{max(counts)}</div><div class="label">most comments</div></div>
+    <div class="stat"><div class="value" style="color:{hdr_color};">{avg_churn:.1f}</div><div class="label">avg churn (review rounds)</div></div>
   </div>
   <div class="chart-wrap">
     <h2>Reviewer comments per merged PR — {label}</h2>
@@ -392,6 +454,7 @@ def make_html(results):
             f'<td>{state_badge}</td>'
             f'<td class="num">{d["reviewer_comments"]}</td>'
             f'<td class="num dim">{d["total_comments"]}</td>'
+            f'<td class="num">{d.get("churn_count", 0)}</td>'
             f'</tr>\n'
         )
 
@@ -455,6 +518,7 @@ def make_html(results):
     <tr>
       <th>Date</th><th>Repo</th><th>PR</th><th>Title</th><th>State</th>
       <th class="num">Reviewer comments</th><th class="num dim">Total (incl. yours)</th>
+      <th class="num" title="Number of times a reviewer left comments and you pushed a fix afterward">Churn</th>
     </tr>
   </thead>
   <tbody>

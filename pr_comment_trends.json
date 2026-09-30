@@ -7,8 +7,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/1",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -18,8 +19,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/41",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -29,8 +31,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/4",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -40,8 +43,9 @@
     "state": "MERGED",
     "total_comments": 49,
     "reviewer_comments": 44,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/5",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "ops-support-worker",
@@ -51,8 +55,9 @@
     "state": "MERGED",
     "total_comments": 25,
     "reviewer_comments": 22,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/ops-support-worker/pull-requests/3",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist_data_processing",
@@ -62,8 +67,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 3,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist_data_processing/pull-requests/2",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -73,8 +79,9 @@
     "state": "MERGED",
     "total_comments": 30,
     "reviewer_comments": 28,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/6",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -84,8 +91,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/9",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -95,8 +103,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/2",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -106,8 +115,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/12",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-data-simulator",
@@ -117,8 +127,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-data-simulator/pull-requests/3",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -128,8 +139,9 @@
     "state": "MERGED",
     "total_comments": 5,
     "reviewer_comments": 3,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/1",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -139,8 +151,9 @@
     "state": "MERGED",
     "total_comments": 4,
     "reviewer_comments": 2,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/15",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -150,8 +163,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/16",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -161,8 +175,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/5",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -172,8 +187,9 @@
     "state": "MERGED",
     "total_comments": 22,
     "reviewer_comments": 14,
+    "churn_count": 4,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/5",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -183,8 +199,9 @@
     "state": "MERGED",
     "total_comments": 6,
     "reviewer_comments": 5,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/17",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -194,8 +211,9 @@
     "state": "MERGED",
     "total_comments": 31,
     "reviewer_comments": 25,
+    "churn_count": 7,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/7",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-math",
@@ -205,8 +223,9 @@
     "state": "MERGED",
     "total_comments": 17,
     "reviewer_comments": 14,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/2",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -216,8 +235,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/10",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -227,8 +247,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/20",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -238,8 +259,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/13",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -249,8 +271,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/21",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -260,8 +283,9 @@
     "state": "MERGED",
     "total_comments": 7,
     "reviewer_comments": 7,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/27",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -271,8 +295,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/33",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -282,8 +307,9 @@
     "state": "MERGED",
     "total_comments": 6,
     "reviewer_comments": 6,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/27",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -293,8 +319,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/16",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -304,8 +331,9 @@
     "state": "MERGED",
     "total_comments": 47,
     "reviewer_comments": 43,
+    "churn_count": 8,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/47",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -315,8 +343,9 @@
     "state": "MERGED",
     "total_comments": 20,
     "reviewer_comments": 19,
+    "churn_count": 7,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/132",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -326,8 +355,9 @@
     "state": "MERGED",
     "total_comments": 23,
     "reviewer_comments": 19,
+    "churn_count": 4,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/9",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -337,8 +367,9 @@
     "state": "MERGED",
     "total_comments": 48,
     "reviewer_comments": 43,
+    "churn_count": 7,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/39",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -348,8 +379,9 @@
     "state": "MERGED",
     "total_comments": 35,
     "reviewer_comments": 25,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/45",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -359,8 +391,9 @@
     "state": "MERGED",
     "total_comments": 17,
     "reviewer_comments": 15,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/18",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -370,8 +403,9 @@
     "state": "MERGED",
     "total_comments": 4,
     "reviewer_comments": 4,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/51",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -381,8 +415,9 @@
     "state": "MERGED",
     "total_comments": 20,
     "reviewer_comments": 16,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/21",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -392,8 +427,9 @@
     "state": "MERGED",
     "total_comments": 5,
     "reviewer_comments": 4,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/34",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -403,8 +439,9 @@
     "state": "MERGED",
     "total_comments": 258,
     "reviewer_comments": 255,
+    "churn_count": 23,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/1",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -414,8 +451,9 @@
     "state": "MERGED",
     "total_comments": 4,
     "reviewer_comments": 3,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/31",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -425,8 +463,9 @@
     "state": "MERGED",
     "total_comments": 8,
     "reviewer_comments": 6,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/8",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -436,8 +475,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/10",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -447,8 +487,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/9",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -458,8 +499,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/7",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -469,8 +511,9 @@
     "state": "MERGED",
     "total_comments": 9,
     "reviewer_comments": 7,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/11",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -480,8 +523,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/16",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -491,8 +535,9 @@
     "state": "MERGED",
     "total_comments": 10,
     "reviewer_comments": 6,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/32",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -502,8 +547,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 2,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/18",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-data-simulator",
@@ -513,8 +559,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-data-simulator/pull-requests/36",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -524,8 +571,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/239",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -535,8 +583,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/10",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -546,8 +595,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/46",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -557,8 +607,9 @@
     "state": "MERGED",
     "total_comments": 6,
     "reviewer_comments": 5,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/115",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -568,8 +619,9 @@
     "state": "MERGED",
     "total_comments": 2,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/45",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -579,8 +631,9 @@
     "state": "MERGED",
     "total_comments": 36,
     "reviewer_comments": 32,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/50",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -590,8 +643,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/52",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -601,8 +655,9 @@
     "state": "MERGED",
     "total_comments": 30,
     "reviewer_comments": 23,
+    "churn_count": 9,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/80",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -612,8 +667,9 @@
     "state": "MERGED",
     "total_comments": 23,
     "reviewer_comments": 16,
+    "churn_count": 5,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/83",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -623,8 +679,9 @@
     "state": "MERGED",
     "total_comments": 2,
     "reviewer_comments": 2,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/167",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -634,8 +691,9 @@
     "state": "MERGED",
     "total_comments": 11,
     "reviewer_comments": 9,
+    "churn_count": 4,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/95",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -645,8 +703,9 @@
     "state": "MERGED",
     "total_comments": 177,
     "reviewer_comments": 137,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/110",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -656,8 +715,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 3,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/179",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -667,8 +727,9 @@
     "state": "MERGED",
     "total_comments": 62,
     "reviewer_comments": 52,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/117",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -678,8 +739,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 2,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/119",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -689,8 +751,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/123",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -700,8 +763,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/74",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -711,8 +775,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/155",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -722,8 +787,9 @@
     "state": "MERGED",
     "total_comments": 23,
     "reviewer_comments": 19,
+    "churn_count": 4,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/49",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -733,8 +799,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/124",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -744,8 +811,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/30",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -755,8 +823,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/75",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -766,8 +835,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/156",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -777,8 +847,9 @@
     "state": "MERGED",
     "total_comments": 84,
     "reviewer_comments": 71,
+    "churn_count": 8,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/135",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -788,8 +859,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/307",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -799,8 +871,9 @@
     "state": "MERGED",
     "total_comments": 14,
     "reviewer_comments": 8,
+    "churn_count": 4,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/147",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -810,8 +883,9 @@
     "state": "MERGED",
     "total_comments": 9,
     "reviewer_comments": 5,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/56",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "asdf-maker",
@@ -821,8 +895,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/asdf-maker/pull-requests/22",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -832,8 +907,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/155",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -843,8 +919,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/41",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -854,8 +931,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/39",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -865,8 +943,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/97",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -876,8 +955,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/177",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "science-data-ingester",
@@ -887,8 +967,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/science-data-ingester/pull-requests/9",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "summit-ingest-worker",
@@ -898,8 +979,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/summit-ingest-worker/pull-requests/6",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dataset-inventory-maker",
@@ -909,8 +991,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dataset-inventory-maker/pull-requests/12",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -920,8 +1003,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/324",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -931,8 +1015,9 @@
     "state": "MERGED",
     "total_comments": 7,
     "reviewer_comments": 7,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/159",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -942,8 +1027,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/57",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -953,8 +1039,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/160",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -964,8 +1051,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/48",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -975,8 +1063,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/102",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -986,8 +1075,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/182",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -997,8 +1087,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/162",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1008,8 +1099,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/58",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -1019,8 +1111,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 2,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/220",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-data-simulator",
@@ -1030,8 +1123,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-data-simulator/pull-requests/48",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1041,8 +1135,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/59",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "asdf-maker",
@@ -1052,8 +1147,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/asdf-maker/pull-requests/26",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dataset-inventory-maker",
@@ -1063,8 +1159,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dataset-inventory-maker/pull-requests/17",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -1074,8 +1171,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/44",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1085,8 +1183,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/340",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "science-data-ingester",
@@ -1096,8 +1195,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/science-data-ingester/pull-requests/10",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1107,8 +1207,9 @@
     "state": "MERGED",
     "total_comments": 45,
     "reviewer_comments": 36,
+    "churn_count": 13,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/1",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1118,8 +1219,9 @@
     "state": "MERGED",
     "total_comments": 120,
     "reviewer_comments": 70,
+    "churn_count": 8,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/167",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1129,8 +1231,9 @@
     "state": "MERGED",
     "total_comments": 298,
     "reviewer_comments": 236,
+    "churn_count": 30,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/3",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1140,8 +1243,9 @@
     "state": "MERGED",
     "total_comments": 70,
     "reviewer_comments": 54,
+    "churn_count": 8,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/5",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1151,8 +1255,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/9",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1162,8 +1267,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/191",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-core",
@@ -1173,8 +1279,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/52",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1184,8 +1291,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/81",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-ops",
@@ -1195,8 +1303,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/17",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -1206,8 +1315,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/56",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1217,8 +1327,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/130",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1228,8 +1339,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/214",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-sphinx-theme",
@@ -1239,8 +1351,9 @@
     "state": "MERGED",
     "total_comments": 3,
     "reviewer_comments": 3,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-sphinx-theme/pull-requests/14",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1250,8 +1363,9 @@
     "state": "MERGED",
     "total_comments": 33,
     "reviewer_comments": 21,
+    "churn_count": 8,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/14",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1261,8 +1375,9 @@
     "state": "MERGED",
     "total_comments": 14,
     "reviewer_comments": 8,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/15",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1272,8 +1387,9 @@
     "state": "MERGED",
     "total_comments": 13,
     "reviewer_comments": 9,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/16",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1283,8 +1399,9 @@
     "state": "MERGED",
     "total_comments": 5,
     "reviewer_comments": 4,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/393",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1294,8 +1411,9 @@
     "state": "MERGED",
     "total_comments": 4,
     "reviewer_comments": 2,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/394",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1305,8 +1423,9 @@
     "state": "MERGED",
     "total_comments": 247,
     "reviewer_comments": 155,
+    "churn_count": 11,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/234",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1316,8 +1435,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/454",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1327,8 +1447,9 @@
     "state": "MERGED",
     "total_comments": 25,
     "reviewer_comments": 13,
+    "churn_count": 4,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/256",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-inventory",
@@ -1338,8 +1459,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-inventory/pull-requests/82",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-quality",
@@ -1349,8 +1471,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-quality/pull-requests/16",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -1360,8 +1483,9 @@
     "state": "MERGED",
     "total_comments": 105,
     "reviewer_comments": 57,
+    "churn_count": 10,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/289",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1371,8 +1495,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/26",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1382,8 +1507,9 @@
     "state": "MERGED",
     "total_comments": 150,
     "reviewer_comments": 74,
+    "churn_count": 11,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/131",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1393,8 +1519,9 @@
     "state": "MERGED",
     "total_comments": 87,
     "reviewer_comments": 38,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/236",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1404,8 +1531,9 @@
     "state": "MERGED",
     "total_comments": 7,
     "reviewer_comments": 6,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/30",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1415,8 +1543,9 @@
     "state": "MERGED",
     "total_comments": 107,
     "reviewer_comments": 53,
+    "churn_count": 9,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/281",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1426,8 +1555,9 @@
     "state": "MERGED",
     "total_comments": 7,
     "reviewer_comments": 3,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/179",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -1437,8 +1567,9 @@
     "state": "MERGED",
     "total_comments": 5,
     "reviewer_comments": 4,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/88",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "public-documentation",
@@ -1448,8 +1579,9 @@
     "state": "MERGED",
     "total_comments": 4,
     "reviewer_comments": 2,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/public-documentation/pull-requests/4",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -1459,8 +1591,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/315",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-core",
@@ -1470,8 +1603,9 @@
     "state": "MERGED",
     "total_comments": 2,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/66",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1481,8 +1615,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/256",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1492,8 +1627,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/158",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-ops",
@@ -1503,8 +1639,9 @@
     "state": "MERGED",
     "total_comments": 6,
     "reviewer_comments": 5,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/42",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-ops",
@@ -1514,8 +1651,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/43",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-test",
@@ -1525,8 +1663,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/91",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1536,8 +1675,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/184",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1547,8 +1687,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/286",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1558,8 +1699,9 @@
     "state": "MERGED",
     "total_comments": 6,
     "reviewer_comments": 4,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/88",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-core",
@@ -1569,8 +1711,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/74",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-ops",
@@ -1580,8 +1723,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/49",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1591,8 +1735,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/89",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-header-validator",
@@ -1602,8 +1747,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/44",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-common",
@@ -1613,8 +1759,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/328",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-core",
@@ -1624,8 +1771,9 @@
     "state": "MERGED",
     "total_comments": 1,
     "reviewer_comments": 1,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/75",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1635,8 +1783,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/268",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1646,8 +1795,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/174",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1657,8 +1807,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/195",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1668,8 +1819,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/300",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1679,8 +1831,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/483",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "public-documentation",
@@ -1690,8 +1843,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/public-documentation/pull-requests/5",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1701,8 +1855,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/34",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-math",
@@ -1712,8 +1867,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/25",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-spectral-lines",
@@ -1723,8 +1879,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-spectral-lines/pull-requests/9",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-pac",
@@ -1734,8 +1891,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-pac/pull-requests/36",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1745,8 +1903,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/270",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1756,8 +1915,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/177",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1767,8 +1927,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/197",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1778,8 +1939,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/302",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1789,8 +1951,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/485",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-inventory",
@@ -1800,8 +1963,9 @@
     "state": "OPEN",
     "total_comments": 27,
     "reviewer_comments": 14,
+    "churn_count": 5,
     "url": "https://bitbucket.org/dkistdc/dkist-inventory/pull-requests/92",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1811,8 +1975,9 @@
     "state": "MERGED",
     "total_comments": 34,
     "reviewer_comments": 20,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/317",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1822,8 +1987,9 @@
     "state": "MERGED",
     "total_comments": 17,
     "reviewer_comments": 7,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/327",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1833,8 +1999,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/507",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1844,8 +2011,9 @@
     "state": "MERGED",
     "total_comments": 169,
     "reviewer_comments": 90,
+    "churn_count": 6,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/329",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1853,10 +2021,11 @@
     "title": "Collapse two-pass geometry correction into a single homogeneous-coordinates warp",
     "created": "2026-07-29",
     "state": "OPEN",
-    "total_comments": 19,
+    "total_comments": 20,
     "reviewer_comments": 13,
+    "churn_count": 3,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/331",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1864,10 +2033,11 @@
     "title": "Collapse two-pass geometry correction into a single homogeneous-coordinates warp",
     "created": "2026-07-30",
     "state": "OPEN",
-    "total_comments": 27,
+    "total_comments": 28,
     "reviewer_comments": 17,
+    "churn_count": 2,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/297",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-math",
@@ -1877,8 +2047,9 @@
     "state": "OPEN",
     "total_comments": 77,
     "reviewer_comments": 48,
+    "churn_count": 8,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/27",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkistdc-testing",
@@ -1888,8 +2059,9 @@
     "state": "MERGED",
     "total_comments": 0,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/535",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-visp",
@@ -1897,10 +2069,11 @@
     "title": "Add code cleanliness, consistency, and domain-quality review sections to Rovo Dev agent",
     "created": "2026-09-21",
     "state": "OPEN",
-    "total_comments": 7,
+    "total_comments": 11,
     "reviewer_comments": 6,
+    "churn_count": 1,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/338",
-    "_cache_version": 2
+    "_cache_version": 3
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1910,7 +2083,8 @@
     "state": "OPEN",
     "total_comments": 3,
     "reviewer_comments": 0,
+    "churn_count": 0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/304",
-    "_cache_version": 2
+    "_cache_version": 3
   }
 ]
