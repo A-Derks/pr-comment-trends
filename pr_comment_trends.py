@@ -158,6 +158,19 @@ def get_pr_commits(workspace, repo, pr_id, headers):
     return list(paginate(url, headers, params=params))
 
 
+def get_pr_lines_changed(workspace, repo, pr_id, headers):
+    """Return total lines changed (added + removed) across the PR's current diff."""
+    url = f"{BASE_URL}/repositories/{workspace}/{repo}/pullrequests/{pr_id}/diffstat"
+    params = {
+        "pagelen": 100,
+        "fields": "values.lines_added,values.lines_removed,next",
+    }
+    files = list(paginate(url, headers, params=params))
+    added = sum(f.get("lines_added", 0) or 0 for f in files)
+    removed = sum(f.get("lines_removed", 0) or 0 for f in files)
+    return added + removed
+
+
 def _is_excluded_comment(comment, exclude_users):
     """True if a comment's author is you or the AI reviewer bot."""
     exclude_nicks = {u.lower() for u in exclude_users if u}
@@ -184,6 +197,55 @@ def compute_comment_stats(comments, exclude_users):
     total = len(comments)
     reviewer = sum(1 for c in comments if not _is_excluded_comment(c, exclude_users))
     return total, reviewer
+
+
+# Keyword heuristic for sorting reviewer comments into "this is a correctness/
+# bug issue" vs "this is a stylistic/naming/docs preference". This is a rough
+# proxy, not a precise judgment call — a comment can be miscategorized or land
+# in neither bucket. It exists to separate "reviewer found something actually
+# wrong" from "reviewer had a preference," since a raw comment count treats
+# those identically.
+CORRECTNESS_KEYWORDS = [
+    "bug", "incorrect", "wrong", "should be", "off by", "off-by", "edge case",
+    "exception", "crash", "crashes", "fails", "breaks", "broken",
+    "doesn't work", "does not work", "not correct", "mistake", "error in",
+    "race condition", "null", "none check", "overflow", "wrong result",
+    "regression", "silently", "divide by zero", "division by zero",
+    "raises", "raise a", "won't work", "will not work", "typo in the logic",
+    "logic error", "unintended", "this will fail", "this breaks",
+]
+STYLISTIC_KEYWORDS = [
+    "naming", "rename", "docstring", "type hint", "readability", "pep8",
+    "black", "isort", "formatting", "line length", "typo", "consistent",
+    "convention", "prefer", "nit:", "nitpick", "persnickety", "style",
+    "wording", "phrasing", "more concise", "more readable", "cleaner",
+    "cosmetic", "minor:", "small thing",
+]
+
+
+def categorize_comments(comments, exclude_users):
+    """
+    Split non-excluded reviewer comments into rough content buckets.
+
+    Returns a dict with counts: correctness, stylistic, and reviewer_total
+    (the same "reviewer" count used elsewhere). A single comment can count
+    toward both buckets if it hits keywords from each; comments matching
+    neither keyword list count toward reviewer_total only.
+    """
+    reviewer_comments = [c for c in comments if not _is_excluded_comment(c, exclude_users)]
+    correctness = 0
+    stylistic = 0
+    for c in reviewer_comments:
+        text = ((c.get("content") or {}).get("raw") or "").lower()
+        if any(kw in text for kw in CORRECTNESS_KEYWORDS):
+            correctness += 1
+        if any(kw in text for kw in STYLISTIC_KEYWORDS):
+            stylistic += 1
+    return {
+        "reviewer_total": len(reviewer_comments),
+        "correctness": correctness,
+        "stylistic": stylistic,
+    }
 
 
 def compute_churn_count(comments, commits, exclude_users):
@@ -234,7 +296,7 @@ CACHE_FILE = "pr_comment_trends.json"
 # Bump this any time the comment-counting/exclusion logic changes.
 # Cached entries written under an older version are ignored and recomputed,
 # so a logic fix doesn't get silently masked by stale cached values.
-CACHE_LOGIC_VERSION = 3
+CACHE_LOGIC_VERSION = 4
 
 
 def load_cache():
@@ -290,6 +352,12 @@ def collect_data(author_username):
             commits = get_pr_commits(WORKSPACE, repo, pr_id, headers)
             churn = compute_churn_count(comments, commits, exclude)
 
+            categories = categorize_comments(comments, exclude)
+            lines_changed = get_pr_lines_changed(WORKSPACE, repo, pr_id, headers)
+            comments_per_100_loc = (
+                round(reviewer / lines_changed * 100, 2) if lines_changed else None
+            )
+
             results.append({
                 "repo": repo,
                 "pr_id": pr_id,
@@ -299,12 +367,18 @@ def collect_data(author_username):
                 "total_comments": total,
                 "reviewer_comments": reviewer,
                 "churn_count": churn,
+                "correctness_comments": categories["correctness"],
+                "stylistic_comments": categories["stylistic"],
+                "lines_changed": lines_changed,
+                "comments_per_100_loc": comments_per_100_loc,
                 "url": f"https://bitbucket.org/{WORKSPACE}/{repo}/pull-requests/{pr_id}",
                 "_cache_version": CACHE_LOGIC_VERSION,
             })
             print(
                 f"    #{pr_id}: {reviewer} reviewer comments ({total} total), "
-                f"{churn} churn(s) — {pr['title'][:45]}"
+                f"{churn} churn(s), {categories['correctness']} correctness / "
+                f"{categories['stylistic']} stylistic, {lines_changed} LOC changed "
+                f"— {pr['title'][:45]}"
             )
 
     results.sort(key=lambda x: x["created"])
@@ -326,6 +400,20 @@ def _section_html(chunk, label, date_range, chart_id):
     avg_trend = [round(avg, 2)] * len(counts)
     churn_counts = [d.get("churn_count", 0) for d in chunk]
     avg_churn = sum(churn_counts) / len(churn_counts)
+
+    # Aggregate (not averaged-of-averages) so small PRs don't get equal
+    # weight to large ones when computing rates.
+    total_reviewer_comments = sum(counts)
+    total_correctness = sum(d.get("correctness_comments", 0) for d in chunk)
+    total_lines_changed = sum(d.get("lines_changed", 0) or 0 for d in chunk)
+    pct_correctness = (
+        round(total_correctness / total_reviewer_comments * 100, 1)
+        if total_reviewer_comments else 0.0
+    )
+    comments_per_100_loc = (
+        round(total_reviewer_comments / total_lines_changed * 100, 2)
+        if total_lines_changed else None
+    )
     titles_json = json.dumps([d["title"][:60] for d in chunk])
     labels_json = json.dumps([
         f"#{d['pr_id']} ({d['repo'].replace('dkist-processing-','').replace('dkist-','')})"
@@ -350,6 +438,8 @@ def _section_html(chunk, label, date_range, chart_id):
     <div class="stat"><div class="value" style="color:{hdr_color};">{avg:.1f}</div><div class="label">overall avg reviewer comments</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{max(counts)}</div><div class="label">most comments</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{avg_churn:.1f}</div><div class="label">avg churn (review rounds)</div></div>
+    <div class="stat"><div class="value" style="color:{hdr_color};">{pct_correctness:.0f}%</div><div class="label">reviewer comments that were correctness/bug related</div></div>
+    <div class="stat"><div class="value" style="color:{hdr_color};">{comments_per_100_loc if comments_per_100_loc is not None else "—"}</div><div class="label">reviewer comments per 100 lines changed</div></div>
   </div>
   <div class="chart-wrap">
     <h2>Reviewer comments per merged PR — {label}</h2>
@@ -455,6 +545,9 @@ def make_html(results):
             f'<td class="num">{d["reviewer_comments"]}</td>'
             f'<td class="num dim">{d["total_comments"]}</td>'
             f'<td class="num">{d.get("churn_count", 0)}</td>'
+            f'<td class="num dim">{d.get("correctness_comments", 0)} / {d.get("stylistic_comments", 0)}</td>'
+            f'<td class="num dim">{d.get("lines_changed", 0) or 0}</td>'
+            f'<td class="num dim">{d.get("comments_per_100_loc") if d.get("comments_per_100_loc") is not None else "—"}</td>'
             f'</tr>\n'
         )
 
@@ -519,6 +612,9 @@ def make_html(results):
       <th>Date</th><th>Repo</th><th>PR</th><th>Title</th><th>State</th>
       <th class="num">Reviewer comments</th><th class="num dim">Total (incl. yours)</th>
       <th class="num" title="Number of times a reviewer left comments and you pushed a fix afterward">Churn</th>
+      <th class="num dim" title="Reviewer comments matched by correctness/bug keywords vs. stylistic/naming keywords (rough heuristic, not exact)">Bug / Style</th>
+      <th class="num dim" title="Total lines added + removed in this PR's diff">Lines Δ</th>
+      <th class="num dim" title="Reviewer comments per 100 lines changed">Cmts/100LOC</th>
     </tr>
   </thead>
   <tbody>

@@ -8,8 +8,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 16386,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/1",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -20,8 +24,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 556,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/41",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -32,8 +40,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 165,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/4",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -44,8 +56,12 @@
     "total_comments": 49,
     "reviewer_comments": 44,
     "churn_count": 3,
+    "correctness_comments": 12,
+    "stylistic_comments": 6,
+    "lines_changed": 3170,
+    "comments_per_100_loc": 1.39,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/5",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "ops-support-worker",
@@ -56,8 +72,12 @@
     "total_comments": 25,
     "reviewer_comments": 22,
     "churn_count": 3,
+    "correctness_comments": 3,
+    "stylistic_comments": 0,
+    "lines_changed": 437,
+    "comments_per_100_loc": 5.03,
     "url": "https://bitbucket.org/dkistdc/ops-support-worker/pull-requests/3",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist_data_processing",
@@ -68,8 +88,12 @@
     "total_comments": 3,
     "reviewer_comments": 3,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 363,
+    "comments_per_100_loc": 0.83,
     "url": "https://bitbucket.org/dkistdc/dkist_data_processing/pull-requests/2",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -80,8 +104,12 @@
     "total_comments": 30,
     "reviewer_comments": 28,
     "churn_count": 6,
+    "correctness_comments": 5,
+    "stylistic_comments": 1,
+    "lines_changed": 6689,
+    "comments_per_100_loc": 0.42,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/6",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -92,8 +120,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 1392,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/9",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -104,8 +136,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 572,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/2",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -116,8 +152,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/12",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-data-simulator",
@@ -128,8 +168,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 16,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-data-simulator/pull-requests/3",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -140,8 +184,12 @@
     "total_comments": 5,
     "reviewer_comments": 3,
     "churn_count": 2,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 59,
+    "comments_per_100_loc": 5.08,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/1",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -152,8 +200,12 @@
     "total_comments": 4,
     "reviewer_comments": 2,
     "churn_count": 2,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 100,
+    "comments_per_100_loc": 2.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/15",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -164,8 +216,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5397,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/16",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -176,8 +232,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 1790,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/5",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -188,8 +248,12 @@
     "total_comments": 22,
     "reviewer_comments": 14,
     "churn_count": 4,
+    "correctness_comments": 1,
+    "stylistic_comments": 1,
+    "lines_changed": 117,
+    "comments_per_100_loc": 11.97,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/5",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -200,8 +264,12 @@
     "total_comments": 6,
     "reviewer_comments": 5,
     "churn_count": 1,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 516,
+    "comments_per_100_loc": 0.97,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/17",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -212,8 +280,12 @@
     "total_comments": 31,
     "reviewer_comments": 25,
     "churn_count": 7,
+    "correctness_comments": 2,
+    "stylistic_comments": 3,
+    "lines_changed": 546,
+    "comments_per_100_loc": 4.58,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/7",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-math",
@@ -224,8 +296,12 @@
     "total_comments": 17,
     "reviewer_comments": 14,
     "churn_count": 3,
+    "correctness_comments": 1,
+    "stylistic_comments": 4,
+    "lines_changed": 242,
+    "comments_per_100_loc": 5.79,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/2",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -236,8 +312,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 102,
+    "comments_per_100_loc": 0.98,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/10",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -248,8 +328,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 89,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/20",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -260,8 +344,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 199,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/13",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -272,8 +360,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 500,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/21",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -284,8 +376,12 @@
     "total_comments": 7,
     "reviewer_comments": 7,
     "churn_count": 3,
+    "correctness_comments": 1,
+    "stylistic_comments": 1,
+    "lines_changed": 163,
+    "comments_per_100_loc": 4.29,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/27",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -296,8 +392,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 27,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/33",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -308,8 +408,12 @@
     "total_comments": 6,
     "reviewer_comments": 6,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 6153,
+    "comments_per_100_loc": 0.1,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/27",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -320,8 +424,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 44,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/16",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -332,8 +440,12 @@
     "total_comments": 47,
     "reviewer_comments": 43,
     "churn_count": 8,
+    "correctness_comments": 4,
+    "stylistic_comments": 3,
+    "lines_changed": 1776,
+    "comments_per_100_loc": 2.42,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/47",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -344,8 +456,12 @@
     "total_comments": 20,
     "reviewer_comments": 19,
     "churn_count": 7,
+    "correctness_comments": 8,
+    "stylistic_comments": 1,
+    "lines_changed": 375,
+    "comments_per_100_loc": 5.07,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/132",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -356,8 +472,12 @@
     "total_comments": 23,
     "reviewer_comments": 19,
     "churn_count": 4,
+    "correctness_comments": 2,
+    "stylistic_comments": 0,
+    "lines_changed": 130,
+    "comments_per_100_loc": 14.62,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/9",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -368,8 +488,12 @@
     "total_comments": 48,
     "reviewer_comments": 43,
     "churn_count": 7,
+    "correctness_comments": 5,
+    "stylistic_comments": 3,
+    "lines_changed": 629,
+    "comments_per_100_loc": 6.84,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/39",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -380,8 +504,12 @@
     "total_comments": 35,
     "reviewer_comments": 25,
     "churn_count": 6,
+    "correctness_comments": 1,
+    "stylistic_comments": 5,
+    "lines_changed": 740,
+    "comments_per_100_loc": 3.38,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/45",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -392,8 +520,12 @@
     "total_comments": 17,
     "reviewer_comments": 15,
     "churn_count": 3,
+    "correctness_comments": 2,
+    "stylistic_comments": 0,
+    "lines_changed": 522,
+    "comments_per_100_loc": 2.87,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/18",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -404,8 +536,12 @@
     "total_comments": 4,
     "reviewer_comments": 4,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 351,
+    "comments_per_100_loc": 1.14,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/51",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -416,8 +552,12 @@
     "total_comments": 20,
     "reviewer_comments": 16,
     "churn_count": 3,
+    "correctness_comments": 2,
+    "stylistic_comments": 0,
+    "lines_changed": 704,
+    "comments_per_100_loc": 2.27,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/21",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -428,8 +568,12 @@
     "total_comments": 5,
     "reviewer_comments": 4,
     "churn_count": 3,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 128,
+    "comments_per_100_loc": 3.12,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/34",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -440,8 +584,12 @@
     "total_comments": 258,
     "reviewer_comments": 255,
     "churn_count": 23,
+    "correctness_comments": 34,
+    "stylistic_comments": 21,
+    "lines_changed": 14301,
+    "comments_per_100_loc": 1.78,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/1",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -452,8 +600,12 @@
     "total_comments": 4,
     "reviewer_comments": 3,
     "churn_count": 2,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 29,
+    "comments_per_100_loc": 10.34,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/31",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -464,8 +616,12 @@
     "total_comments": 8,
     "reviewer_comments": 6,
     "churn_count": 3,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 202,
+    "comments_per_100_loc": 2.97,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/8",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -476,8 +632,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 29,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/10",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -488,8 +648,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 261,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/9",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -500,8 +664,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 14,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/7",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -512,8 +680,12 @@
     "total_comments": 9,
     "reviewer_comments": 7,
     "churn_count": 2,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 59,
+    "comments_per_100_loc": 11.86,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/11",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -524,8 +696,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 142,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/16",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -536,8 +712,12 @@
     "total_comments": 10,
     "reviewer_comments": 6,
     "churn_count": 3,
+    "correctness_comments": 2,
+    "stylistic_comments": 0,
+    "lines_changed": 10,
+    "comments_per_100_loc": 60.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/32",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -548,8 +728,12 @@
     "total_comments": 3,
     "reviewer_comments": 2,
     "churn_count": 2,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 126,
+    "comments_per_100_loc": 1.59,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/18",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-data-simulator",
@@ -560,8 +744,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 7,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-data-simulator/pull-requests/36",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -572,8 +760,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/239",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -584,8 +776,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 6,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/10",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -596,8 +792,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 13,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/46",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -608,8 +808,12 @@
     "total_comments": 6,
     "reviewer_comments": 5,
     "churn_count": 3,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 16,
+    "comments_per_100_loc": 31.25,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/115",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -620,8 +824,12 @@
     "total_comments": 2,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 28,
+    "comments_per_100_loc": 3.57,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/45",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -632,8 +840,12 @@
     "total_comments": 36,
     "reviewer_comments": 32,
     "churn_count": 6,
+    "correctness_comments": 7,
+    "stylistic_comments": 8,
+    "lines_changed": 897,
+    "comments_per_100_loc": 3.57,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/50",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -644,8 +856,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 10,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/52",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -656,8 +872,12 @@
     "total_comments": 30,
     "reviewer_comments": 23,
     "churn_count": 9,
+    "correctness_comments": 8,
+    "stylistic_comments": 4,
+    "lines_changed": 70,
+    "comments_per_100_loc": 32.86,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/80",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -668,8 +888,12 @@
     "total_comments": 23,
     "reviewer_comments": 16,
     "churn_count": 5,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 318,
+    "comments_per_100_loc": 5.03,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/83",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -680,8 +904,12 @@
     "total_comments": 2,
     "reviewer_comments": 2,
     "churn_count": 2,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 66.67,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/167",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -692,8 +920,12 @@
     "total_comments": 11,
     "reviewer_comments": 9,
     "churn_count": 4,
+    "correctness_comments": 1,
+    "stylistic_comments": 2,
+    "lines_changed": 19,
+    "comments_per_100_loc": 47.37,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/95",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -704,8 +936,12 @@
     "total_comments": 177,
     "reviewer_comments": 137,
     "churn_count": 6,
+    "correctness_comments": 14,
+    "stylistic_comments": 13,
+    "lines_changed": 1018,
+    "comments_per_100_loc": 13.46,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/110",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -716,8 +952,12 @@
     "total_comments": 3,
     "reviewer_comments": 3,
     "churn_count": 1,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 39,
+    "comments_per_100_loc": 7.69,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/179",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -728,8 +968,12 @@
     "total_comments": 62,
     "reviewer_comments": 52,
     "churn_count": 3,
+    "correctness_comments": 2,
+    "stylistic_comments": 0,
+    "lines_changed": 346,
+    "comments_per_100_loc": 15.03,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/117",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -740,8 +984,12 @@
     "total_comments": 3,
     "reviewer_comments": 2,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 39,
+    "comments_per_100_loc": 5.13,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/119",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -752,8 +1000,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/123",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -764,8 +1016,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/74",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -776,8 +1032,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/155",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -788,8 +1048,12 @@
     "total_comments": 23,
     "reviewer_comments": 19,
     "churn_count": 4,
+    "correctness_comments": 5,
+    "stylistic_comments": 0,
+    "lines_changed": 498,
+    "comments_per_100_loc": 3.82,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/49",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -800,8 +1064,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/124",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -812,8 +1080,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/30",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -824,8 +1096,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/75",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -836,8 +1112,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/156",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -848,8 +1128,12 @@
     "total_comments": 84,
     "reviewer_comments": 71,
     "churn_count": 8,
+    "correctness_comments": 2,
+    "stylistic_comments": 11,
+    "lines_changed": 748,
+    "comments_per_100_loc": 9.49,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/135",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -860,8 +1144,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 25,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/307",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -872,8 +1160,12 @@
     "total_comments": 14,
     "reviewer_comments": 8,
     "churn_count": 4,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 128,
+    "comments_per_100_loc": 6.25,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/147",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -884,8 +1176,12 @@
     "total_comments": 9,
     "reviewer_comments": 5,
     "churn_count": 2,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 32,
+    "comments_per_100_loc": 15.62,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/56",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "asdf-maker",
@@ -896,8 +1192,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/asdf-maker/pull-requests/22",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -908,8 +1208,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/155",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -920,8 +1224,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/41",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -932,8 +1240,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/39",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -944,8 +1256,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/97",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -956,8 +1272,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/177",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "science-data-ingester",
@@ -968,8 +1288,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/science-data-ingester/pull-requests/9",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "summit-ingest-worker",
@@ -980,8 +1304,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/summit-ingest-worker/pull-requests/6",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dataset-inventory-maker",
@@ -992,8 +1320,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dataset-inventory-maker/pull-requests/12",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1004,8 +1336,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/324",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1016,8 +1352,12 @@
     "total_comments": 7,
     "reviewer_comments": 7,
     "churn_count": 1,
+    "correctness_comments": 1,
+    "stylistic_comments": 1,
+    "lines_changed": 135,
+    "comments_per_100_loc": 5.19,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/159",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1028,8 +1368,12 @@
     "total_comments": 3,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 7,
+    "comments_per_100_loc": 14.29,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/57",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1040,8 +1384,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 22,
+    "comments_per_100_loc": 4.55,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/160",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1052,8 +1400,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 20,
+    "comments_per_100_loc": 5.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/48",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1064,8 +1416,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 17,
+    "comments_per_100_loc": 5.88,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/102",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1076,8 +1432,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 23,
+    "comments_per_100_loc": 4.35,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/182",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1088,8 +1448,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 397,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/162",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1100,8 +1464,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/58",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -1112,8 +1480,12 @@
     "total_comments": 3,
     "reviewer_comments": 2,
     "churn_count": 2,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 66.67,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/220",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-data-simulator",
@@ -1124,8 +1496,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-data-simulator/pull-requests/48",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1136,8 +1512,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/59",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "asdf-maker",
@@ -1148,8 +1528,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/asdf-maker/pull-requests/26",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dataset-inventory-maker",
@@ -1160,8 +1544,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dataset-inventory-maker/pull-requests/17",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -1172,8 +1560,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/44",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1184,8 +1576,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/340",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "science-data-ingester",
@@ -1196,8 +1592,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/science-data-ingester/pull-requests/10",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1208,8 +1608,12 @@
     "total_comments": 45,
     "reviewer_comments": 36,
     "churn_count": 13,
+    "correctness_comments": 4,
+    "stylistic_comments": 1,
+    "lines_changed": 1040,
+    "comments_per_100_loc": 3.46,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/1",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1220,8 +1624,12 @@
     "total_comments": 120,
     "reviewer_comments": 70,
     "churn_count": 8,
+    "correctness_comments": 12,
+    "stylistic_comments": 7,
+    "lines_changed": 1186,
+    "comments_per_100_loc": 5.9,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/167",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1232,8 +1640,12 @@
     "total_comments": 298,
     "reviewer_comments": 236,
     "churn_count": 30,
+    "correctness_comments": 26,
+    "stylistic_comments": 33,
+    "lines_changed": 2652,
+    "comments_per_100_loc": 8.9,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/3",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1244,8 +1656,12 @@
     "total_comments": 70,
     "reviewer_comments": 54,
     "churn_count": 8,
+    "correctness_comments": 8,
+    "stylistic_comments": 4,
+    "lines_changed": 239,
+    "comments_per_100_loc": 22.59,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/5",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1256,8 +1672,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 106,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/9",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1268,8 +1688,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/191",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-core",
@@ -1280,8 +1704,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/52",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1292,8 +1720,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 25.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/81",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-ops",
@@ -1304,8 +1736,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 7,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/17",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -1316,8 +1752,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/56",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1328,8 +1768,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/130",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1340,8 +1784,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/214",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-sphinx-theme",
@@ -1352,8 +1800,12 @@
     "total_comments": 3,
     "reviewer_comments": 3,
     "churn_count": 2,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 60.0,
     "url": "https://bitbucket.org/dkistdc/dkist-sphinx-theme/pull-requests/14",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1364,8 +1816,12 @@
     "total_comments": 33,
     "reviewer_comments": 21,
     "churn_count": 8,
+    "correctness_comments": 5,
+    "stylistic_comments": 8,
+    "lines_changed": 182,
+    "comments_per_100_loc": 11.54,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/14",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1376,8 +1832,12 @@
     "total_comments": 14,
     "reviewer_comments": 8,
     "churn_count": 3,
+    "correctness_comments": 1,
+    "stylistic_comments": 1,
+    "lines_changed": 99,
+    "comments_per_100_loc": 8.08,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/15",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1388,8 +1848,12 @@
     "total_comments": 13,
     "reviewer_comments": 9,
     "churn_count": 3,
+    "correctness_comments": 1,
+    "stylistic_comments": 1,
+    "lines_changed": 60,
+    "comments_per_100_loc": 15.0,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/16",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1400,8 +1864,12 @@
     "total_comments": 5,
     "reviewer_comments": 4,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 40,
+    "comments_per_100_loc": 10.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/393",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1412,8 +1880,12 @@
     "total_comments": 4,
     "reviewer_comments": 2,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 36,
+    "comments_per_100_loc": 5.56,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/394",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1424,8 +1896,12 @@
     "total_comments": 247,
     "reviewer_comments": 155,
     "churn_count": 11,
+    "correctness_comments": 16,
+    "stylistic_comments": 7,
+    "lines_changed": 1483,
+    "comments_per_100_loc": 10.45,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/234",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1436,8 +1912,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 55,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/454",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1448,8 +1928,12 @@
     "total_comments": 25,
     "reviewer_comments": 13,
     "churn_count": 4,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 32,
+    "comments_per_100_loc": 40.62,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/256",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-inventory",
@@ -1460,8 +1944,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 19,
+    "comments_per_100_loc": 5.26,
     "url": "https://bitbucket.org/dkistdc/dkist-inventory/pull-requests/82",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-quality",
@@ -1472,8 +1960,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 55,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-quality/pull-requests/16",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -1484,8 +1976,12 @@
     "total_comments": 105,
     "reviewer_comments": 57,
     "churn_count": 10,
+    "correctness_comments": 4,
+    "stylistic_comments": 2,
+    "lines_changed": 192,
+    "comments_per_100_loc": 29.69,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/289",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1496,8 +1992,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 33.33,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/26",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1508,8 +2008,12 @@
     "total_comments": 150,
     "reviewer_comments": 74,
     "churn_count": 11,
+    "correctness_comments": 8,
+    "stylistic_comments": 1,
+    "lines_changed": 381,
+    "comments_per_100_loc": 19.42,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/131",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1520,8 +2024,12 @@
     "total_comments": 87,
     "reviewer_comments": 38,
     "churn_count": 6,
+    "correctness_comments": 4,
+    "stylistic_comments": 4,
+    "lines_changed": 511,
+    "comments_per_100_loc": 7.44,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/236",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1532,8 +2040,12 @@
     "total_comments": 7,
     "reviewer_comments": 6,
     "churn_count": 1,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 12,
+    "comments_per_100_loc": 50.0,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/30",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1544,8 +2056,12 @@
     "total_comments": 107,
     "reviewer_comments": 53,
     "churn_count": 9,
+    "correctness_comments": 4,
+    "stylistic_comments": 2,
+    "lines_changed": 794,
+    "comments_per_100_loc": 6.68,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/281",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1556,8 +2072,12 @@
     "total_comments": 7,
     "reviewer_comments": 3,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 67,
+    "comments_per_100_loc": 4.48,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/179",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -1568,8 +2088,12 @@
     "total_comments": 5,
     "reviewer_comments": 4,
     "churn_count": 2,
+    "correctness_comments": 1,
+    "stylistic_comments": 1,
+    "lines_changed": 117,
+    "comments_per_100_loc": 3.42,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/88",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "public-documentation",
@@ -1580,8 +2104,12 @@
     "total_comments": 4,
     "reviewer_comments": 2,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 66.67,
     "url": "https://bitbucket.org/dkistdc/public-documentation/pull-requests/4",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -1592,8 +2120,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/315",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-core",
@@ -1604,8 +2136,12 @@
     "total_comments": 2,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 20.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/66",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1616,8 +2152,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/256",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1628,8 +2168,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/158",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-ops",
@@ -1640,8 +2184,12 @@
     "total_comments": 6,
     "reviewer_comments": 5,
     "churn_count": 2,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 250.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/42",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-ops",
@@ -1652,8 +2200,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/43",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-test",
@@ -1664,8 +2216,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-test/pull-requests/91",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1676,8 +2232,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/184",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1688,8 +2248,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/286",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1700,8 +2264,12 @@
     "total_comments": 6,
     "reviewer_comments": 4,
     "churn_count": 1,
+    "correctness_comments": 1,
+    "stylistic_comments": 0,
+    "lines_changed": 9,
+    "comments_per_100_loc": 44.44,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/88",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-core",
@@ -1712,8 +2280,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 20.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/74",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-ops",
@@ -1724,8 +2296,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 21,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-ops/pull-requests/49",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-fits-specifications",
@@ -1736,8 +2312,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-fits-specifications/pull-requests/89",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-header-validator",
@@ -1748,8 +2328,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-header-validator/pull-requests/44",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-common",
@@ -1760,8 +2344,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 33.33,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-common/pull-requests/328",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-core",
@@ -1772,8 +2360,12 @@
     "total_comments": 1,
     "reviewer_comments": 1,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 33.33,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-core/pull-requests/75",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1784,8 +2376,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/268",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1796,8 +2392,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/174",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1808,8 +2408,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/195",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1820,8 +2424,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/300",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1832,8 +2440,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/483",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "public-documentation",
@@ -1844,8 +2456,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/public-documentation/pull-requests/5",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "solar-wavelength-calibration",
@@ -1856,8 +2472,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/solar-wavelength-calibration/pull-requests/34",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-math",
@@ -1868,8 +2488,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 3,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/25",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-spectral-lines",
@@ -1880,8 +2504,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-spectral-lines/pull-requests/9",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-pac",
@@ -1892,8 +2520,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 5,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-pac/pull-requests/36",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -1904,8 +2536,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/270",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-dlnirsp",
@@ -1916,8 +2552,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-dlnirsp/pull-requests/177",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-vbi",
@@ -1928,8 +2568,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-vbi/pull-requests/197",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1940,8 +2584,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 2,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/302",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -1952,8 +2600,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 4,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/485",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-inventory",
@@ -1964,8 +2616,12 @@
     "total_comments": 27,
     "reviewer_comments": 14,
     "churn_count": 5,
+    "correctness_comments": 0,
+    "stylistic_comments": 3,
+    "lines_changed": 232,
+    "comments_per_100_loc": 6.03,
     "url": "https://bitbucket.org/dkistdc/dkist-inventory/pull-requests/92",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1976,8 +2632,12 @@
     "total_comments": 34,
     "reviewer_comments": 20,
     "churn_count": 6,
+    "correctness_comments": 0,
+    "stylistic_comments": 1,
+    "lines_changed": 123,
+    "comments_per_100_loc": 16.26,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/317",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -1988,8 +2648,12 @@
     "total_comments": 17,
     "reviewer_comments": 7,
     "churn_count": 2,
+    "correctness_comments": 3,
+    "stylistic_comments": 0,
+    "lines_changed": 323,
+    "comments_per_100_loc": 2.17,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/327",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -2000,8 +2664,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 1,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/507",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -2012,8 +2680,12 @@
     "total_comments": 169,
     "reviewer_comments": 90,
     "churn_count": 6,
+    "correctness_comments": 14,
+    "stylistic_comments": 13,
+    "lines_changed": 881,
+    "comments_per_100_loc": 10.22,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/329",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -2024,8 +2696,12 @@
     "total_comments": 20,
     "reviewer_comments": 13,
     "churn_count": 3,
+    "correctness_comments": 6,
+    "stylistic_comments": 0,
+    "lines_changed": 151,
+    "comments_per_100_loc": 8.61,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/331",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -2036,8 +2712,12 @@
     "total_comments": 28,
     "reviewer_comments": 17,
     "churn_count": 2,
+    "correctness_comments": 3,
+    "stylistic_comments": 0,
+    "lines_changed": 164,
+    "comments_per_100_loc": 10.37,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/297",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-math",
@@ -2048,8 +2728,12 @@
     "total_comments": 77,
     "reviewer_comments": 48,
     "churn_count": 8,
+    "correctness_comments": 7,
+    "stylistic_comments": 6,
+    "lines_changed": 885,
+    "comments_per_100_loc": 5.42,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-math/pull-requests/27",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkistdc-testing",
@@ -2060,8 +2744,12 @@
     "total_comments": 0,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 11,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkistdc-testing/pull-requests/535",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-visp",
@@ -2072,8 +2760,12 @@
     "total_comments": 11,
     "reviewer_comments": 6,
     "churn_count": 1,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 106,
+    "comments_per_100_loc": 5.66,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-visp/pull-requests/338",
-    "_cache_version": 3
+    "_cache_version": 4
   },
   {
     "repo": "dkist-processing-cryonirsp",
@@ -2084,7 +2776,11 @@
     "total_comments": 3,
     "reviewer_comments": 0,
     "churn_count": 0,
+    "correctness_comments": 0,
+    "stylistic_comments": 0,
+    "lines_changed": 238,
+    "comments_per_100_loc": 0.0,
     "url": "https://bitbucket.org/dkistdc/dkist-processing-cryonirsp/pull-requests/304",
-    "_cache_version": 3
+    "_cache_version": 4
   }
 ]
