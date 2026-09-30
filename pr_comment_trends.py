@@ -391,9 +391,17 @@ MEETING_CUTOFF = "2026-06-12"  # "before" = on or before; "after" = after
 
 
 def _section_html(chunk, label, date_range, chart_id):
-    """Return the HTML string for one time-period section (metrics + chart)."""
+    """Return the HTML string for one time-period section (metrics + chart).
+
+    PRs with 0 reviewer comments are excluded from this section's metrics
+    and chart — they're typically trivial changes (version bumps, snyk
+    ignores) that a reviewer rubber-stamped, and including them would drag
+    the averages down without reflecting anything about review quality.
+    They still appear in the full "All Merged PRs" table below.
+    """
+    chunk = [d for d in chunk if d.get("reviewer_comments", 0) > 0]
     if not chunk:
-        return f'<p style="color:#57606a;margin-bottom:28px;">No merged PRs in the <strong>{label}</strong> period.</p>'
+        return f'<p style="color:#57606a;margin-bottom:28px;">No merged PRs with reviewer comments in the <strong>{label}</strong> period.</p>'
 
     counts = [d["reviewer_comments"] for d in chunk]
     avg = sum(counts) / len(counts)
@@ -434,7 +442,7 @@ def _section_html(chunk, label, date_range, chart_id):
     <span class="section-range">{date_range}</span>
   </div>
   <div class="stats">
-    <div class="stat"><div class="value" style="color:{hdr_color};">{len(chunk)}</div><div class="label">merged PRs</div></div>
+    <div class="stat"><div class="value" style="color:{hdr_color};">{len(chunk)}</div><div class="label">merged PRs with reviewer comments</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{avg:.1f}</div><div class="label">overall avg reviewer comments</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{max(counts)}</div><div class="label">most comments</div></div>
     <div class="stat"><div class="value" style="color:{hdr_color};">{avg_churn:.1f}</div><div class="label">avg churn (review rounds)</div></div>
